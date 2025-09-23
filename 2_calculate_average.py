@@ -12,3 +12,6 @@ def find_average(numbers):
         return 0
 
 print(find_average([]))
+
+class Thiago():
+    nome = 'tHIAGO'
