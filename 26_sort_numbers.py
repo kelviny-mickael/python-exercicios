@@ -6,13 +6,17 @@
 # solution(None) # should return []
 
 def solutions(nums):
-    nums_sorted = map(int, nums)
+    if nums:
+        nums_sorted = map(int, nums)
 
-    nums_ordered = sorted(nums_sorted)
+        nums_ordered = sorted(nums_sorted)
 
-    return nums_ordered
+        return nums_ordered
+    else:
+        return []
 
 print(solutions([1,2,3,10,5]))
 print(solutions([20,2,10]))
 print(solutions([2,20,10]))
 print(solutions([]))
+print(solutions(None))
